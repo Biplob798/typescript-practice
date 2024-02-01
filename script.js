@@ -125,7 +125,45 @@ myFunction('a', 'b', 'false');
 //     // console.log(a+b);
 // }
 // console.log (calculation(4,6,'add'))
-let userDetails;
-userDetails = (id, userInfo, c) => {
-};
-console.log(userDetails(4, 6, 'add'));
+// let userDetails: (id:number|string,userInfo:{name:string,age:number},z:string)=>void
+// userDetails =(id:number|string,userInfo:{name:string,age:number},c:string)=>{
+// }
+// console.log (userDetails(4,6,'add'))
+// type class 
+// class player{
+//     name:string;
+//     age:number;
+//     country:string
+//     constructor(n:string,a:number,c:string){
+//         this.name=n
+//         this.age=a
+//         this.country=c
+//     }
+//     play(){
+//         console.log(`${this.name} from ${this.age} is playing!`);
+//     }
+// }
+// const Maserati = new player('Maserati',34,'bangladesh')
+// const Maserati = new player('Maserati','23','bangladesh')
+// const players:string[]=[]
+// const players:player[]=[]
+// players.push('shakib')
+// players.push(Maserati)
+// type class Access Modifiers 
+class player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.age} is playing!`);
+    }
+}
+const Maserati = new player('Maserati', 34, 'bangladesh');
+console.log(Maserati.name);
+// const Maserati = new player('Maserati','23','bangladesh')
+// const players:string[]=[]
+// const players:player[]=[]
+// players.push('shakib')
+// players.push(Maserati)

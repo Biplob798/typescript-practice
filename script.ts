@@ -156,10 +156,129 @@ type userType= {name:string;age:number}
 
 // }
 // console.log (calculation(4,6,'add'))
-let userDetails: (id:number|string,userInfo:{name:string,age:number},z:string)=>void
-userDetails =(id:number|string,userInfo:{name:string,age:number},c:string)=>{
+// let userDetails: (id:number|string,userInfo:{name:string,age:number},z:string)=>void
+// userDetails =(id:number|string,userInfo:{name:string,age:number},c:string)=>{
     
    
 
-}
-console.log (userDetails(4,6,'add'))
+// }
+// console.log (userDetails(4,6,'add'))
+
+// type class 
+// class player{
+//     name:string;
+//     age:number;
+//     country:string
+//     constructor(n:string,a:number,c:string){
+//         this.name=n
+//         this.age=a
+//         this.country=c
+//     }
+//     play(){
+//         console.log(`${this.name} from ${this.age} is playing!`);
+//     }
+// }
+
+// const Maserati = new player('Maserati',34,'bangladesh')
+
+// const Maserati = new player('Maserati','23','bangladesh')
+
+// const players:string[]=[]
+
+// const players:player[]=[]
+// players.push('shakib')
+// players.push(Maserati)
+
+
+// type class Access Modifiers 
+// class player{
+//     private name:string;
+//     private age:number;
+//     private country:string
+//     constructor(n:string,a:number,c:string){
+//         this.name=n
+//         this.age=a
+//         this.country=c
+//     }
+//     play(){
+//         console.log(`${this.name} from ${this.age} is playing!`);
+//     }
+// }
+
+// const Maserati = new player('Maserati',34,'bangladesh')
+// console.log(Maserati.name);
+
+// const Maserati = new player('Maserati','23','bangladesh')
+
+// const players:string[]=[]
+
+// const players:player[]=[]
+// players.push('shakib')
+// players.push(Maserati)
+
+// import {player} from './src/classes/player';
+// const Maserati = new player('Maserati',34,'bangladesh')
+// console.log(Maserati.name);
+
+// const Maserati = new player('Maserati','23','bangladesh')
+
+// Interface type 
+// interface RectangleOptions{
+//     width:number,
+//     length:number
+// }
+// function drawRectangle(options:{
+//     width:number,
+//     length:number
+// }){
+// function drawRectangle(options:RectangleOptions){
+//     let width =options.width;
+//     let length =options.length
+// }
+// let threeOptions={
+    
+//         width:30,
+//         length:40,
+//         hight:10
+    
+// }
+// drawRectangle(threeOptions)
+
+
+// Generics type 
+
+// const addID =<T extends {
+//     name:string;
+//     age:number;
+// }
+// >( 
+//     obj:T)=>{
+//     let id =Math.floor(Math.random()*100)
+//     return{...obj,id}
+// }
+// let user =addID({
+//     name:'Masrafi',
+//     age:40
+// })
+// // let user='nanua'
+// addID(user)
+
+// ENUM type 
+
+// enum RType{SUCCESS,FAILURE}
+// inteerface APIResponse<T>{
+//     status:number;
+//     type:RType;
+//     data:T
+// }
+// const response1:APIResponse<string>={
+//     status:200,
+//     type:RType,
+//     data:'test'
+// }
+
+// let a =[3,'HELLO',{p:3}]
+// // a[0]='3'
+// // a[0]=false
+// let b:[number,string,object]=[4,'go',{t:8}]
+// b[1]='gobo'
